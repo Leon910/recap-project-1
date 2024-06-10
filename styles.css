@@ -56,20 +56,27 @@ p {
 .icon1 {
   margin: 0;
   position: absolute;
-  bottom: 100px;
+  bottom: 150px;
   right: 10px;
 }
 
 .icon2 {
   margin: 0;
   position: absolute;
-  bottom: 120px;
+  bottom: 170px;
   right: 10px;
 }
 
 .icon3 {
   margin: 0;
   position: absolute;
-  bottom: 100px;
+  bottom: 150px;
   right: 10px;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: sticky;
 }
