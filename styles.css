@@ -3,6 +3,7 @@
 }
 
 .mainHeaderTitle {
+  text-align: center;
   color: blueviolet;
 }
 
@@ -79,8 +80,13 @@ p {
   flex-wrap: wrap;
   justify-content: space-evenly;
   position: sticky;
+  padding: 0;
 }
 
 .navIcon {
   width: 50px;
+}
+
+.navbar a:hover .navIcon {
+  background-color: blueviolet;
 }
