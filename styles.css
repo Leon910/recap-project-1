@@ -21,6 +21,10 @@ p {
   flex-direction: column;
 }
 
+.questionBox1Tag1 {
+  align-self: flex-start;
+}
+
 .questionBox2 {
   position: relative;
   margin: 20px 20px 20px 20px;
@@ -31,6 +35,10 @@ p {
   flex-direction: column;
 }
 
+.questionBox2Tag2 {
+  align-self: flex-start;
+}
+
 .questionBox3 {
   position: relative;
   margin: 20px 20px 20px 20px;
@@ -39,6 +47,10 @@ p {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+}
+
+.questionBox3Tag3 {
+  align-self: flex-start;
 }
 
 .icon1 {
