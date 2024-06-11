@@ -12,6 +12,12 @@ p {
   text-align: center;
 }
 
+button {
+  max-width: fit-content;
+  background-color: rgb(24, 188, 183);
+  color: red;
+}
+
 .questionBox1 {
   position: relative;
   margin: 20px 20px 20px 20px;
@@ -20,6 +26,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  align-items: center;
 }
 
 .questionBox1Tag1 {
@@ -34,6 +41,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  align-items: center;
 }
 
 .questionBox2Tag2 {
@@ -48,6 +56,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  align-items: center;
 }
 
 .questionBox3Tag3 {
@@ -83,10 +92,26 @@ p {
   padding: 0;
 }
 
-.navIcon {
+.navIcon1 {
   width: 50px;
 }
 
-.navbar a:hover .navIcon {
+.navIcon2 {
+  width: 50px;
+}
+
+.navIcon3 {
+  width: 50px;
+}
+
+.navbar a:hover .navIcon1 {
+  background-color: blueviolet;
+}
+
+.navbar a:hover .navIcon2 {
+  background-color: blueviolet;
+}
+
+.navbar a:hover .navIcon3 {
   background-color: blueviolet;
 }
