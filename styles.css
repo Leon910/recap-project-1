@@ -1,8 +1,31 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  padding-inline: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
 .headerTop {
   background-color: rgb(255, 111, 159);
+  position: sticky;
+  top: 0;
+  padding-block: 16px;
+  z-index: 1;
 }
 
 .mainHeaderTitle {
+  margin: 0;
   text-align: center;
   color: blueviolet;
 }
@@ -23,6 +46,9 @@ button {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .questionBox1 {
@@ -33,11 +59,11 @@ button {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  position: relative;
 }
 
 .questionBox1Tag1 {
   align-self: flex-start;
+  position: relative;
 }
 
 .questionBox2 {
@@ -48,11 +74,11 @@ button {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  position: relative;
 }
 
 .questionBox2Tag2 {
   align-self: flex-start;
+  position: relative;
 }
 
 .questionBox3 {
@@ -68,24 +94,25 @@ button {
 
 .questionBox3Tag3 {
   align-self: flex-start;
+  position: relative;
 }
 
 .icon1 {
   position: absolute;
-  top: 110px;
-  right: 10px;
+  top: 100px;
+  right: 0px;
 }
 
 .icon2 {
   position: absolute;
-  top: -30px;
-  right: 3px;
+  top: 200px;
+  right: 0px;
 }
 
 .icon3 {
   position: absolute;
-  bottom: 100px;
-  right: 10px;
+  top: 100px;
+  right: 0px;
 }
 
 .navbar {
@@ -95,6 +122,8 @@ button {
   position: sticky;
   list-style: none;
   padding: 0;
+  bottom: 0;
+  background-color: brown;
 }
 
 .navIcon1 {
