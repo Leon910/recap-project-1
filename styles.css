@@ -138,14 +138,18 @@ button {
   right: 10px;
 }
 
+footer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+
 .navbar {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  position: sticky;
   list-style: none;
-  padding: 0;
-  bottom: 0;
+  padding-inline: 16px;
   background-color: brown;
 }
 
