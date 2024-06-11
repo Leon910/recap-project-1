@@ -42,49 +42,71 @@ button {
 }
 
 .questionBoxList {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  list-style: none;
   padding: 0;
-  margin: 0;
 }
 
 .questionBox1 {
   margin: 20px 20px 20px 20px;
-  padding: 20px 20px 20px 20px;
+  padding-block: 32px;
   background-color: rgb(54, 173, 206);
+  color: aquamarine;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+
+.questionBox1Flex {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
-.questionBox1Tag1 {
+.tags1Flex {
+  display: flex;
+  flex-wrap: wrap;
   align-self: flex-start;
-  position: relative;
 }
 
 .questionBox2 {
   margin: 20px 20px 20px 20px;
-  padding: 20px 20px 20px 20px;
+  padding-block: 32px;
   background-color: rgb(54, 173, 206);
+  color: aquamarine;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+
+.questionBox2Flex {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
-.questionBox2Tag2 {
+.tags2Flex {
+  display: flex;
+  flex-wrap: wrap;
   align-self: flex-start;
-  position: relative;
 }
 
 .questionBox3 {
   margin: 20px 20px 20px 20px;
-  padding: 20px 20px 20px 20px;
+  padding-block: 32px;
   background-color: rgb(54, 173, 206);
+  color: aquamarine;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+
+.questionBox3Flex {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -92,27 +114,28 @@ button {
   position: relative;
 }
 
-.questionBox3Tag3 {
+.tags3Flex {
+  display: flex;
+  flex-wrap: wrap;
   align-self: flex-start;
-  position: relative;
 }
 
 .icon1 {
   position: absolute;
-  top: 100px;
-  right: 0px;
+  top: -40px;
+  right: 10px;
 }
 
 .icon2 {
   position: absolute;
-  top: 200px;
-  right: 0px;
+  top: -40px;
+  right: 10px;
 }
 
 .icon3 {
   position: absolute;
-  top: 100px;
-  right: 0px;
+  top: -40px;
+  right: 10px;
 }
 
 .navbar {

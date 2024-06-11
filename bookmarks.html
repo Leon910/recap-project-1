@@ -9,54 +9,60 @@
 
   <body>
     <header class="headerTop">
-      <h1 class="mainHeaderTitle">These are your bookmarks</h1>
+      <h1 class="mainHeaderTitle">Bookmarks</h1>
     </header>
 
     <main>
-      <section>
-        <div class="questionBox1">
-          <p>What property flips the axes in flexbox?</p>
-          <button alt="answer button" type="button">Show Answer</button>
+      <ul class="questionBoxList">
+        <li class="questionBox1">
+          <article class="questionBox1Flex">
+            <h2>What property flips the axes in flexbox?</h2>
+            <button alt="answer button" type="button">Show Answer</button>
+            <p>flex-direction</p>
 
-          <div class="questionBox1Tag1">
-            <ul>
-              <button aria-label="tag for html">#html</button>
-              <button aria-label="tag for flexbox">#flexbox</button>
-              <button aria-label="tag for css">#css</button>
+            <ul class="tags1Flex">
+              <li><button aria-label="tag for html">#html</button></li>
+              <li><button aria-label="tag for flexbox">#flexbox</button></li>
+              <li><button aria-label="tag for css">#css</button></li>
             </ul>
-          </div>
-          <figure class="icon1">🔖</figure>
-        </div>
+            <button class="icon1">🔖</button>
+          </article>
+        </li>
 
-        <div class="questionBox2">
-          <p>In what html-element do you put the meta-data of your webpage?</p>
-          <button alt="answer button" type="button">Show Answer</button>
+        <li class="questionBox2">
+          <article class="questionBox2Flex">
+            <h2>
+              In what html-element do you put the meta-data of your webpage?
+            </h2>
+            <button alt="answer button" type="button">Show Answer</button>
+            <p>meta</p>
 
-          <div class="questionBox2Tag2">
-            <ul>
-              <button aria-label="tag for html">#html</button>
-              <button aria-label="tag for flexbox">#flexbox</button>
-              <button aria-label="tag for css">#css</button>
+            <ul class="tags2Flex">
+              <li><button aria-label="tag for html">#html</button></li>
+              <li><button aria-label="tag for flexbox">#flexbox</button></li>
+              <li><button aria-label="tag for css">#css</button></li>
             </ul>
-          </div>
-          <figure class="icon2">🔖</figure>
-        </div>
 
-        <div class="questionBox3">
-          <p>What does css stand for?</p>
-          <button alt="answer button" type="button">Show Answer</button>
+            <button class="icon2">🔖</button>
+          </article>
+        </li>
 
-          <div class="questionBox3Tag3">
-            <ul>
-              <button aria-label="tag for html">#html</button>
-              <button aria-label="tag for flexbox">#flexbox</button>
-              <button aria-label="tag for css">#css</button>
+        <li class="questionBox3">
+          <article class="questionBox3Flex">
+            <h2>What does css stand for?</h2>
+            <button alt="answer button" type="button">Show Answer</button>
+            <p>cascade styling sheets</p>
+
+            <ul class="tags3Flex">
+              <li><button aria-label="tag for html">#html</button></li>
+              <li><button aria-label="tag for flexbox">#flexbox</button></li>
+              <li><button aria-label="tag for css">#css</button></li>
             </ul>
-          </div>
 
-          <figure class="icon3">🔖</figure>
-        </div>
-      </section>
+            <button class="icon3">🔖</button>
+          </article>
+        </li>
+      </ul>
 
       <section>
         <nav>
@@ -69,16 +75,14 @@
                   alt="this is the home button"
               /></a>
             </li>
-
             <li>
-              <a href="index.html" aria-label="goes to bookmark section"
+              <a href="bookmarks.html" aria-label="goes to bookmark section"
                 ><img
                   class="navIcon2"
                   src="assets/bookmark-6751601_1280.png"
                   alt="this is the bookmark button"
               /></a>
             </li>
-
             <li>
               <a href="" aria-label="goes to personal section"
                 ><img
