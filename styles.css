@@ -18,8 +18,14 @@ button {
   color: red;
 }
 
+.questionBoxList {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .questionBox1 {
-  position: relative;
   margin: 20px 20px 20px 20px;
   padding: 20px 20px 20px 20px;
   background-color: rgb(54, 173, 206);
@@ -27,6 +33,7 @@ button {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .questionBox1Tag1 {
@@ -34,7 +41,6 @@ button {
 }
 
 .questionBox2 {
-  position: relative;
   margin: 20px 20px 20px 20px;
   padding: 20px 20px 20px 20px;
   background-color: rgb(54, 173, 206);
@@ -42,6 +48,7 @@ button {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .questionBox2Tag2 {
@@ -49,7 +56,6 @@ button {
 }
 
 .questionBox3 {
-  position: relative;
   margin: 20px 20px 20px 20px;
   padding: 20px 20px 20px 20px;
   background-color: rgb(54, 173, 206);
@@ -57,6 +63,7 @@ button {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .questionBox3Tag3 {
@@ -64,23 +71,20 @@ button {
 }
 
 .icon1 {
-  margin: 0;
   position: absolute;
-  bottom: 150px;
+  top: 110px;
   right: 10px;
 }
 
 .icon2 {
-  margin: 0;
   position: absolute;
-  bottom: 170px;
-  right: 10px;
+  top: -30px;
+  right: 3px;
 }
 
 .icon3 {
-  margin: 0;
   position: absolute;
-  bottom: 150px;
+  bottom: 100px;
   right: 10px;
 }
 
