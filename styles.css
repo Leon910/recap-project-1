@@ -1,34 +1,7 @@
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-main {
-  padding-inline: 16px;
-}
-
-ul {
-  list-style: none;
-}
-
-.headerTop {
-  background-color: rgb(255, 111, 159);
-  position: sticky;
-  top: 0;
-  padding-block: 16px;
-  z-index: 1;
-}
-
-.mainHeaderTitle {
-  margin: 0;
-  text-align: center;
-  color: blueviolet;
-}
+@import "../css/global.css";
+@import "../css/header.css";
+@import "../css/questioncards.css";
+@import "../css/navbar.css";
 
 p {
   color: lightgreen;
