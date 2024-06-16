@@ -14,103 +14,6 @@ button {
   color: red;
 }
 
-.questionBoxList {
-  padding: 0;
-}
-
-.questionBox1 {
-  margin: 20px 20px 20px 20px;
-  padding-block: 32px;
-  background-color: rgb(54, 173, 206);
-  color: aquamarine;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  text-align: center;
-}
-
-.questionBox1Flex {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
-.tags1Flex {
-  display: flex;
-  flex-wrap: wrap;
-  align-self: flex-start;
-}
-
-.questionBox2 {
-  margin: 20px 20px 20px 20px;
-  padding-block: 32px;
-  background-color: rgb(54, 173, 206);
-  color: aquamarine;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  text-align: center;
-}
-
-.questionBox2Flex {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
-.tags2Flex {
-  display: flex;
-  flex-wrap: wrap;
-  align-self: flex-start;
-}
-
-.questionBox3 {
-  margin: 20px 20px 20px 20px;
-  padding-block: 32px;
-  background-color: rgb(54, 173, 206);
-  color: aquamarine;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  text-align: center;
-}
-
-.questionBox3Flex {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
-.tags3Flex {
-  display: flex;
-  flex-wrap: wrap;
-  align-self: flex-start;
-}
-
-.icon1 {
-  position: absolute;
-  top: -40px;
-  right: 10px;
-}
-
-.icon2 {
-  position: absolute;
-  top: -40px;
-  right: 10px;
-}
-
-.icon3 {
-  position: absolute;
-  top: -40px;
-  right: 10px;
-}
-
 footer {
   position: sticky;
   bottom: 0;
@@ -126,26 +29,26 @@ footer {
   background-color: brown;
 }
 
-.navIcon1 {
+.nav-icon1 {
   width: 50px;
 }
 
-.navIcon2 {
+.nav-icon2 {
   width: 50px;
 }
 
-.navIcon3 {
+.nav-icon3 {
   width: 50px;
 }
 
-.navbar a:hover .navIcon1 {
+.navbar a:hover .nav-icon1 {
   background-color: blueviolet;
 }
 
-.navbar a:hover .navIcon2 {
+.navbar a:hover .nav-icon2 {
   background-color: blueviolet;
 }
 
-.navbar a:hover .navIcon3 {
+.navbar a:hover .nav-icon3 {
   background-color: blueviolet;
 }

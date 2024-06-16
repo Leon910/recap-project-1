@@ -1,4 +1,4 @@
-.headerTop {
+.header-top {
   background-color: rgb(255, 111, 159);
   position: sticky;
   top: 0;
@@ -6,7 +6,7 @@
   z-index: 1;
 }
 
-.mainHeaderTitle {
+.main-header-title {
   margin: 0;
   text-align: center;
   color: blueviolet;
