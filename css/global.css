@@ -12,6 +12,14 @@ main {
   padding-inline: 16px;
 }
 
+nav {
+  position: relative;
+}
+
 ul {
   list-style: none;
+}
+
+h2 {
+  font-size: 32px;
 }

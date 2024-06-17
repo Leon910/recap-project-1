@@ -2,6 +2,7 @@
 @import "../css/header.css";
 @import "../css/questioncards.css";
 @import "../css/navbar.css";
+@import "../css/profile.css";
 
 p {
   color: lightgreen;
@@ -11,7 +12,7 @@ p {
 button {
   max-width: fit-content;
   background-color: rgb(24, 188, 183);
-  color: red;
+  color: white;
 }
 
 footer {
@@ -25,20 +26,20 @@ footer {
   flex-wrap: wrap;
   justify-content: space-evenly;
   list-style: none;
-  padding-inline: 16px;
-  background-color: brown;
+  background-color: silver;
+  padding: 10px 10px 10px 10px;
 }
 
 .nav-icon1 {
-  width: 50px;
+  width: 40px;
 }
 
 .nav-icon2 {
-  width: 50px;
+  width: 40px;
 }
 
 .nav-icon3 {
-  width: 50px;
+  width: 40px;
 }
 
 .navbar a:hover .nav-icon1 {

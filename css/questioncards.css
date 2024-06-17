@@ -6,7 +6,7 @@
   margin: 20px 20px 20px 20px;
   padding-block: 32px;
   background-color: rgb(54, 173, 206);
-  color: aquamarine;
+  color: gold;
   border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -32,7 +32,7 @@
   margin: 20px 20px 20px 20px;
   padding-block: 32px;
   background-color: rgb(54, 173, 206);
-  color: aquamarine;
+  color: gold;
   border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -58,7 +58,7 @@
   margin: 20px 20px 20px 20px;
   padding-block: 32px;
   background-color: rgb(54, 173, 206);
-  color: aquamarine;
+  color: gold;
   border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -80,6 +80,32 @@
   align-self: flex-start;
 }
 
+.question-box4 {
+  margin: 20px 20px 20px 20px;
+  padding-block: 32px;
+  background-color: rgb(54, 173, 206);
+  color: gold;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+
+.question-box4-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.tags4-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-start;
+}
+
 .icon1 {
   position: absolute;
   top: -40px;
@@ -93,6 +119,12 @@
 }
 
 .icon3 {
+  position: absolute;
+  top: -40px;
+  right: 10px;
+}
+
+.icon4 {
   position: absolute;
   top: -40px;
   right: 10px;

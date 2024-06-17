@@ -1,5 +1,5 @@
 .header-top {
-  background-color: rgb(255, 111, 159);
+  background-color: silver;
   position: sticky;
   top: 0;
   padding-block: 16px;
@@ -9,5 +9,5 @@
 .main-header-title {
   margin: 0;
   text-align: center;
-  color: blueviolet;
+  color: gold;
 }
