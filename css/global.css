@@ -5,7 +5,14 @@
 }
 
 body {
+  background-color: var(--background-color);
+  color: var(--text-color);
   margin: 0;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
 }
 
 main {

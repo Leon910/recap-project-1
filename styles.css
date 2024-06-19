@@ -4,6 +4,11 @@
 @import "../css/navbar.css";
 @import "../css/profile.css";
 
+:root {
+  --background-color: white;
+  --text-color: black;
+}
+
 p {
   color: lightgreen;
   text-align: center;
