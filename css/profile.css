@@ -2,11 +2,17 @@
   background-color: gray;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 
-.counter-button-list {
+.button-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dark-mode-div {
+  align-self: flex-end;
 }
