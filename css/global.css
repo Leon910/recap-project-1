@@ -11,7 +11,7 @@ body {
 }
 
 .dark-mode {
-  background-color: black;
+  background-color: gray;
   color: white;
 }
 
@@ -22,6 +22,7 @@ body {
 
 main {
   padding-inline: 16px;
+  padding-top: 16px;
 }
 
 nav {

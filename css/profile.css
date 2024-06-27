@@ -1,5 +1,4 @@
 .aboutMe {
-  background-color: gray;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -15,4 +14,8 @@
 
 .dark-mode-div {
   align-self: flex-end;
+}
+
+.nav-icon4 {
+  width: 100px;
 }

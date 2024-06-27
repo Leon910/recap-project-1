@@ -23,3 +23,22 @@ darkModeButton.addEventListener("load", () => {
     body.classList.add("dark-mode");
   }
 });
+
+const toggleAnswerButton = document.querySelector(
+  '[data-js="toggle-answer-button"]'
+);
+
+const answer = document.querySelector('[data-js="show-answer"]');
+
+// forEach button
+// -> here comes my code
+
+toggleAnswerButton.addEventListener("click", () => {
+  if (answer.style.visibility === "hidden") {
+    answer.style.visibility = "visible";
+  } else {
+    answer.style.visibility = "hidden";
+  }
+});
+
+console.log(answerButtonSelect);

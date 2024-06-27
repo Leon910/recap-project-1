@@ -9,28 +9,31 @@
   </head>
 
   <body class="dark-mode">
-
     <header class="header-top">
       <h1 class="main-header-title">You think you are smart? Prove it!</h1>
       <button
-              class="toggle-darkmode"
-              type="button"
-              aria-label="button for dark mode toggle"
-              data-js="dark-mode-button"
-            >
-              Dark Mode
-            </button>
+        class="toggle-darkmode"
+        type="button"
+        aria-label="button for dark mode toggle"
+        data-js="dark-mode-button"
+      >
+        Dark/Light
+      </button>
     </header>
 
     <main>
-
       <ul class="question-box-list">
-        
         <li class="question-box1">
           <article class="question-box1-flex">
             <h2>What property flips the axes in flexbox?</h2>
-            <button alt="answer button" type="button">Show Answer</button>
-            <p>flex-direction</p>
+            <button
+              type="button"
+              data-js="toggle-answer-button"
+              aria-label="click the button and get answer"
+            >
+              Show Answer
+            </button>
+            <p class="hidden" data-js="show-answer">flex-direction</p>
 
             <ul class="tags1-flex">
               <li><button aria-label="tag for html">#html</button></li>
@@ -43,9 +46,17 @@
 
         <li class="question-box2">
           <article class="question-box2-flex">
-            <h2>In what html-element do you put the meta-data of your webpage?</h2>
-            <button alt="answer button" type="button">Show Answer</button>
-            <p>meta</p>         
+            <h2>
+              In what html-element do you put the meta-data of your webpage?
+            </h2>
+            <button
+              type="button"
+              data-js="toggle-answer-button"
+              aria-label="click the button and get answer"
+            >
+              Show Answer
+            </button>
+            <p class="answers" data-js="show-answer">meta</p>
 
             <ul class="tags2-flex">
               <li><button aria-label="tag for html">#html</button></li>
@@ -59,8 +70,14 @@
         <li class="question-box3">
           <article class="question-box3-flex">
             <h2>What does css stand for?</h2>
-            <button alt="answer button" type="button">Show Answer</button>
-            <p>cascade styling sheets</p>         
+            <button
+              type="button"
+              data-js="toggle-answer-button"
+              aria-label="click the button and get answer"
+            >
+              Show Answer
+            </button>
+            <p class="answers" data-js="show-answer">cascade styling sheets</p>
 
             <ul class="tags3-flex">
               <li><button aria-label="tag for html">#html</button></li>
@@ -74,8 +91,16 @@
         <li class="question-box4">
           <article class="question-box4-flex">
             <h2>What does html stand for</h2>
-            <button alt="answer button" type="button">Show Answer</button>
-            <p>hypertext markup language</p>         
+            <button
+              type="button"
+              data-js="toggle-answer-button"
+              aria-label="click the button and get answer"
+            >
+              Show Answer
+            </button>
+            <p class="answers" data-js="show-answer">
+              hypertext markup language
+            </p>
 
             <ul class="tags4-flex">
               <li><button aria-label="tag for html">#html</button></li>
@@ -85,6 +110,7 @@
             <button class="icon4">🔖</button>
           </article>
         </li>
+      </ul>
 
       <footer>
         <nav>
@@ -105,6 +131,7 @@
                   alt="this is the bookmark button"
               /></a>
             </li>
+            <li>
               <a href="profile.html" aria-label="goes to personal section"
                 ><img
                   class="nav-icon3"

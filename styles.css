@@ -14,10 +14,15 @@ p {
   text-align: center;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 button {
   max-width: fit-content;
-  background-color: rgb(24, 188, 183);
-  color: white;
+  background-color: gold;
+  border-radius: 20%;
+  color: black;
 }
 
 footer {
