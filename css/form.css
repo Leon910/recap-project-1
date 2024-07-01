@@ -1,0 +1,10 @@
+.fieldset-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.fieldset-flex button {
+  margin-top: 20px;
+  align-self: center;
+}
