@@ -24,11 +24,33 @@ darkModeButton.addEventListener("load", () => {
   }
 });
 
+// Toggle-Bookmark-Button
+
+const bookmarkButtonToggle = document.querySelector(
+  '[data-js="bookmark-button"]'
+);
+
+// console.log(bookmarkButtonToggle);
+
+bookmarkButtonToggle.addEventListener("click", () => {
+  bookmarkButtonToggle.classList.toggle("icon1-toggle");
+});
+
+// Toogle-Answer-Button
+
 const toggleAnswerButton = document.querySelector(
   '[data-js="toggle-answer-button"]'
 );
-
 const answer = document.querySelector('[data-js="show-answer"]');
+
+toggleAnswerButton.addEventListener("click", () => {
+  answer.classList.toggle("hidden");
+  if (answer.classList.contains("hidden")) {
+    toggleAnswerButton.textContent = "Show Answer";
+  } else {
+    toggleAnswerButton.textContent = "Hide Answer";
+  }
+});
 
 // forEach button
 // -> here comes my code
@@ -91,13 +113,5 @@ document.addEventListener("DOMContentLoaded", function () {
       "Bookmark Box Count from Local Storage:",
       bookmarkBoxCountRetrieve
     );
-  }
-});
-
-toggleAnswerButton.addEventListener("click", () => {
-  if (answer.style.visibility === "hidden") {
-    answer.style.visibility = "visible";
-  } else {
-    answer.style.visibility = "hidden";
   }
 });

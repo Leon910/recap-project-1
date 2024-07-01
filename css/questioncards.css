@@ -110,22 +110,34 @@
   position: absolute;
   top: -40px;
   right: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.icon1-toggle {
+  background-color: red;
 }
 
 .icon2 {
   position: absolute;
   top: -40px;
   right: 10px;
+  padding: 10px;
+  cursor: pointer;
 }
 
 .icon3 {
   position: absolute;
   top: -40px;
   right: 10px;
+  padding: 10px;
+  cursor: pointer;
 }
 
 .icon4 {
   position: absolute;
   top: -40px;
   right: 10px;
+  padding: 10px;
+  cursor: pointer;
 }

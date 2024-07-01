@@ -15,7 +15,7 @@ p {
 }
 
 .hidden {
-  visibility: hidden;
+  display: none;
 }
 
 button {
