@@ -3,6 +3,7 @@
 @import "../css/questioncards.css";
 @import "../css/navbar.css";
 @import "../css/profile.css";
+@import "../css/form.css";
 
 :root {
   --background-color: white;
@@ -49,6 +50,10 @@ footer {
 }
 
 .nav-icon3 {
+  width: 40px;
+}
+
+.nav-icon4 {
   width: 40px;
 }
 
