@@ -70,3 +70,51 @@ form.addEventListener("submit", (event) => {
 
   document.body.append(questionContainer);
 });
+
+// Read Input-Length and Display of Question
+
+const questionInput = document.querySelector('[data-js="question-input"]');
+const amountLeftQuestion = document.querySelector(
+  '[data-js="amount-left-question"]'
+);
+const maxLengthQuestion = questionInput.getAttribute("maxlength");
+
+console.log(questionInput);
+console.log(amountLeftQuestion);
+console.log(maxLengthQuestion);
+
+const updateAmountQuestion = (value) => {
+  amountLeftQuestion.innerText = value;
+};
+
+console.log(updateAmountQuestion);
+
+updateAmountQuestion(maxLengthQuestion);
+
+questionInput.addEventListener("input", () => {
+  updateAmountQuestion(maxLengthQuestion - questionInput.value.length);
+});
+
+// Read Input-Length and Display of Answer
+
+const answerInput = document.querySelector('[data-js="answer-input"]');
+const amountLeftAnswer = document.querySelector(
+  '[data-js="amount-left-answer"]'
+);
+const maxLengthAnswer = answerInput.getAttribute("maxlength");
+
+console.log(answerInput);
+console.log(amountLeftAnswer);
+console.log(maxLengthAnswer);
+
+const updateAmountAnswer = (value) => {
+  amountLeftAnswer.innerText = value;
+};
+
+console.log(updateAmountAnswer);
+
+updateAmountAnswer(maxLengthAnswer);
+
+answerInput.addEventListener("input", () => {
+  updateAmountAnswer(maxLengthAnswer - answerInput.value.length);
+});

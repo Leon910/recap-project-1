@@ -8,3 +8,8 @@
   margin-top: 20px;
   align-self: center;
 }
+
+.form__character-count {
+  display: flex;
+  justify-content: right;
+}
