@@ -16,10 +16,12 @@
             <legend>Fill out this form</legend>
 
             <label for="your-question">Your question:</label>
-            <textarea id="your-question" name="question"></textarea>
+            <textarea id="your-question" name="question" maxlength="150" data-js="question-input" value=""></textarea>
+            <small class="form__character-count">(<span data-js="amount-left-question"></span> &nbsp;characters left)</small>
 
             <label for="your-answer">Your Answer:</label>
-            <textarea id="your-answer" name="answer"></textarea>
+            <textarea id="your-answer" name="answer" maxlength="150" data-js="answer-input" value=""></textarea>
+            <small class="form__character-count">(<span data-js="amount-left-answer"></span> &nbsp;characters left)</small>
 
             <label for="tag">Tag:</label>
             <input type="text" id="tag" name="tagging"/>
