@@ -98,18 +98,4 @@ document.addEventListener("DOMContentLoaded", () => {
       bookmarkBoxCountRetrieve
     );
   }
-
-  // Form Handling
-  const form = document.querySelector('[data-js="form-data"]');
-  if (form) {
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
-
-      const formElement = event.target;
-      const formData = new FormData(formElement);
-      const data = Object.fromEntries(formData);
-      console.log(formData);
-      console.log(data);
-    });
-  }
 });
