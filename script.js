@@ -1,65 +1,55 @@
-const darkModeButton = document.querySelector("[data-js=dark-mode-button]");
-const body = document.body;
+document.addEventListener("DOMContentLoaded", () => {
+  // Query Selector for dark mode toggle button and body-element selection
+  const darkModeButton = document.querySelector('[data-js="dark-mode-button"]');
+  const body = document.body;
 
-// Event listener for dark mode toggle button
-darkModeButton.addEventListener("click", () => {
-  toggleDarkMode();
-});
+  // Function to toggle dark mode and save state in localStorage
+  function toggleDarkMode() {
+    body.classList.toggle("dark-mode");
 
-// Function to toggle dark mode and save state in localStorage
-function toggleDarkMode() {
-  body.classList.toggle("dark-mode");
-
-  if (body.classList.contains("dark-mode")) {
-    localStorage.setItem("dark-mode-enabled", "true");
-  } else {
-    localStorage.removeItem("dark-mode-enabled");
+    if (body.classList.contains("dark-mode-disabled")) {
+      localStorage.setItem("dark-mode-disabled", "true");
+    } else {
+      localStorage.removeItem("dark-mode-disabled");
+    }
   }
-}
 
-// Apply dark mode based on localStorage on page load
-darkModeButton.addEventListener("load", () => {
-  if (localStorage.getItem("dark-mode-enabled") === "true") {
-    body.classList.add("dark-mode");
+  if (darkModeButton) {
+    darkModeButton.addEventListener("click", () => {
+      toggleDarkMode();
+    });
+
+    // Apply dark mode based on localStorage on page load
+    if (localStorage.getItem("dark-mode-disabled") === "true") {
+      body.classList.add("dark-mode");
+    }
   }
-});
 
-// Toggle-Bookmark-Button
-
-const bookmarkButtonToggle = document.querySelector(
-  '[data-js="bookmark-button"]'
-);
-
-// console.log(bookmarkButtonToggle);
-
-bookmarkButtonToggle.addEventListener("click", () => {
-  bookmarkButtonToggle.classList.toggle("icon1-toggle");
-});
-
-// Toogle-Answer-Button
-
-const toggleAnswerButton = document.querySelector(
-  '[data-js="toggle-answer-button"]'
-);
-const answer = document.querySelector('[data-js="show-answer"]');
-
-toggleAnswerButton.addEventListener("click", () => {
-  answer.classList.toggle("hidden");
-  if (answer.classList.contains("hidden")) {
-    toggleAnswerButton.textContent = "Show Answer";
-  } else {
-    toggleAnswerButton.textContent = "Hide Answer";
+  // Toggle-Bookmark-Button
+  const bookmarkButtonToggle = document.querySelector(
+    '[data-js="bookmark-button"]'
+  );
+  if (bookmarkButtonToggle) {
+    bookmarkButtonToggle.addEventListener("click", () => {
+      bookmarkButtonToggle.classList.toggle("icon1-toggle");
+    });
   }
-});
 
-// forEach button
-// -> here comes my code
+  // Toggle-Answer-Button
+  const toggleAnswerButton = document.querySelector(
+    '[data-js="toggle-answer-button"]'
+  );
+  const answer = document.querySelector('[data-js="show-answer"]');
+  if (toggleAnswerButton && answer) {
+    toggleAnswerButton.addEventListener("click", () => {
+      answer.classList.toggle("hidden");
+      toggleAnswerButton.textContent = answer.classList.contains("hidden")
+        ? "Show Answer"
+        : "Hide Answer";
+    });
+  }
 
-/* Count Questions*/
-
-// If we are on the questions page, count the bookmark boxes and store in localStorage
-
-document.addEventListener("DOMContentLoaded", function () {
+  // Count Questions
   const questionBoxList = document.querySelector(
     '[data-js="count-question-box"]'
   );
@@ -69,27 +59,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     console.log("Question Box Count:", questionBoxes);
   }
-});
 
-// If we are on the profile page, retrieve and display the bookmark count on the button
-const countDisplayButton = document.querySelector(
-  '[data-js="count-created-questions"]'
-);
-if (countDisplayButton) {
-  const questionBoxCountRetrieve =
-    localStorage.getItem("questionBoxCount") || 0;
-  countDisplayButton.textContent = `Created Questions (${questionBoxCountRetrieve})`;
-
-  console.log(
-    "Question Box Count from Local Storage:",
-    questionBoxCountRetrieve
+  const countDisplayButton = document.querySelector(
+    '[data-js="count-created-questions"]'
   );
-}
+  if (countDisplayButton) {
+    const questionBoxCountRetrieve =
+      localStorage.getItem("questionBoxCount") || 0;
+    countDisplayButton.textContent = `Created Questions (${questionBoxCountRetrieve})`;
 
-/* Count Bookmarks*/
+    console.log(
+      "Question Box Count from Local Storage:",
+      questionBoxCountRetrieve
+    );
+  }
 
-document.addEventListener("DOMContentLoaded", function () {
-  // If we are on the bookmarks page, count the bookmark boxes and store in localStorage
+  // Count Bookmarks
   const bookmarkBoxList = document.querySelector(
     '[data-js="count-bookmark-box"]'
   );
@@ -100,18 +85,31 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Bookmark Box Count:", bookmarkBoxes);
   }
 
-  // If we are on the profile page, retrieve and display the bookmark count on the button
-  const countDisplayButton = document.querySelector(
+  const countBookmarksButton = document.querySelector(
     '[data-js="count-created-bookmarks"]'
   );
-  if (countDisplayButton) {
+  if (countBookmarksButton) {
     const bookmarkBoxCountRetrieve =
       localStorage.getItem("bookmarkBoxCount") || 0;
-    countDisplayButton.textContent = `Created Bookmarks (${bookmarkBoxCountRetrieve})`;
+    countBookmarksButton.textContent = `Created Bookmarks (${bookmarkBoxCountRetrieve})`;
 
     console.log(
       "Bookmark Box Count from Local Storage:",
       bookmarkBoxCountRetrieve
     );
+  }
+
+  // Form Handling
+  const form = document.querySelector('[data-js="form-data"]');
+  if (form) {
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const formElement = event.target;
+      const formData = new FormData(formElement);
+      const data = Object.fromEntries(formData);
+      console.log(formData);
+      console.log(data);
+    });
   }
 });
