@@ -1,5 +1,7 @@
 // Listening Submit-Events
+
 const form = document.querySelector('[data-js="form-data"]');
+console.log(form);
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -69,6 +71,8 @@ form.addEventListener("submit", (event) => {
   console.log(questionContainer);
 
   document.body.append(questionContainer);
+
+  togglingAnswers();
 });
 
 // Read Input-Length and Display of Question
