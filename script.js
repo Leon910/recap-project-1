@@ -5,23 +5,12 @@ const body = document.body;
 // Function to toggle dark mode and save state in localStorage
 function toggleDarkMode() {
   body.classList.toggle("dark-mode");
-
-  if (body.classList.contains("dark-mode-disabled")) {
-    localStorage.setItem("dark-mode-disabled", "true");
-  } else {
-    localStorage.removeItem("dark-mode-disabled");
-  }
 }
 
 if (darkModeButton) {
   darkModeButton.addEventListener("click", () => {
     toggleDarkMode();
   });
-
-  // Apply dark mode based on localStorage on page load
-  if (localStorage.getItem("dark-mode-disabled") === "true") {
-    body.classList.add("dark-mode");
-  }
 }
 
 // Toggle-Bookmark-Button

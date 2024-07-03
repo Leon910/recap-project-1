@@ -11,12 +11,8 @@ body {
 }
 
 .dark-mode {
-  background-color: rebeccapurple;
+  background-color: darkgrey;
   color: white;
-}
-
-.dark-mode-disabled {
-  background-color: green;
 }
 
 main {
