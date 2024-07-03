@@ -1,7 +1,12 @@
+.form-container {
+  padding-top: 20px;
+}
+
 .fieldset-flex {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  padding-top: 20px;
 }
 
 .fieldset-flex button {
